@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foxrose — Preview</title>
+<title>Foxrose</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
@@ -27,8 +27,8 @@ body{background:#FAF7F2;color:#4B1528;}
 .hero-cta{font-family:'Satoshi',sans-serif;display:inline-block;padding:10px 22px;border-radius:3px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;border:1.5px solid #E8732A;color:#E8732A;text-decoration:none;white-space:nowrap;align-self:flex-end;flex-shrink:0;}
 .hero-right{background:#B8395A;display:flex;align-items:center;justify-content:center;padding:40px;}
 
-.section-header{display:flex;align-items:center;padding:28px 48px;border-top:1px solid #E8D8CC;border-bottom:1px solid #E8D8CC;background:#FAF7F2;}
-.section-tag{font-family:'Satoshi',sans-serif;font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#E8732A;}
+.sec-hdr{display:flex;align-items:center;padding:28px 48px;border-top:1px solid #E8D8CC;border-bottom:1px solid #E8D8CC;background:#FAF7F2;}
+.sec-tag{font-family:'Satoshi',sans-serif;font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#E8732A;}
 
 .about{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #E8D8CC;}
 .about-left{padding:60px 48px;border-right:1px solid #E8D8CC;}
@@ -39,24 +39,11 @@ body{background:#FAF7F2;color:#4B1528;}
 .pullquote{font-family:'Fraunces',serif;font-size:22px;font-weight:300;font-style:italic;color:#FAF7F2;line-height:1.5;margin-bottom:24px;}
 .pullquote-source{font-family:'Satoshi',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#C4A89A;}
 
-.services{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #E8D8CC;}
-.service{padding:40px 48px;border-right:1px solid #E8D8CC;border-bottom:1px solid #E8D8CC;position:relative;}
-.service:nth-child(even){border-right:none;}
-.service:nth-child(3),.service:nth-child(4){border-bottom:none;}
-.service-accent{position:absolute;top:0;left:0;width:3px;height:100%;}
-.service-num{font-family:'Satoshi',sans-serif;font-size:11px;color:#C4A89A;margin-bottom:16px;letter-spacing:1px;}
-.service-name{font-family:'Fraunces',serif;font-size:22px;font-weight:300;color:#4B1528;margin-bottom:12px;line-height:1.2;}
-.service-desc{font-family:'Satoshi',sans-serif;font-size:13px;color:#7A3045;line-height:1.75;}
-.service-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:16px;}
-.tag-berry{font-family:'Satoshi',sans-serif;font-size:10px;padding:3px 9px;border-radius:2px;background:rgba(184,57,90,0.1);color:#B8395A;letter-spacing:0.5px;}
-.tag-orange{font-family:'Satoshi',sans-serif;font-size:10px;padding:3px 9px;border-radius:2px;background:rgba(232,115,42,0.1);color:#C45A10;letter-spacing:0.5px;}
-.tag-plum{font-family:'Satoshi',sans-serif;font-size:10px;padding:3px 9px;border-radius:2px;background:rgba(75,21,40,0.1);color:#4B1528;letter-spacing:0.5px;}
-.tag-neutral{font-family:'Satoshi',sans-serif;font-size:10px;padding:3px 9px;border-radius:2px;background:#F0E4DC;color:#7A3045;letter-spacing:0.5px;}
-
-.service-full{padding:40px 48px;display:flex;align-items:flex-start;gap:16px;border-top:1px solid #E8D8CC;border-bottom:1px solid #E8D8CC;position:relative;}
-.service-full-accent{position:absolute;top:0;left:0;width:3px;height:100%;}
-.service-full-header{display:flex;align-items:center;gap:14px;margin-bottom:12px;}
-.service-full-badge{font-family:'Satoshi',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;border:1px solid #E8732A;color:#E8732A;padding:4px 12px;border-radius:2px;white-space:nowrap;flex-shrink:0;}
+.list{padding:0 48px;border-bottom:1px solid #E8D8CC;}
+.list-item{display:flex;align-items:baseline;gap:24px;padding:28px 0;border-bottom:1px solid #E8D8CC;}
+.list-item:last-child{border-bottom:none;}
+.list-num{font-family:'Satoshi',sans-serif;font-size:12px;color:#C4A89A;letter-spacing:1px;width:24px;flex-shrink:0;}
+.list-name{font-family:'Fraunces',serif;font-size:32px;font-weight:300;color:#4B1528;line-height:1;}
 
 .clients-section{padding:56px 48px;border-bottom:1px solid #E8D8CC;}
 .clients-text{font-family:'Satoshi',sans-serif;font-size:15px;color:#7A3045;line-height:2.4;}
@@ -90,9 +77,9 @@ body{background:#FAF7F2;color:#4B1528;}
     <span class="nav-logo">Foxrose</span>
   </div>
   <div>
-    <a class="nav-link" href="#">About</a>
-    <a class="nav-link" href="#">Services</a>
-    <a class="nav-link" href="#">Contact</a>
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#expertise">Expertise</a>
+    <a class="nav-link" href="#contact">Contact</a>
   </div>
 </nav>
 
@@ -104,7 +91,7 @@ body{background:#FAF7F2;color:#4B1528;}
     </div>
     <div class="hero-bottom">
       <p class="hero-sub">Foxrose helps B2B brands find, shape, and share the stories that build trust, drive advocacy, and make the complex feel human.</p>
-      <a class="hero-cta" href="#">Let's talk</a>
+      <a class="hero-cta" href="#contact">Let's talk</a>
     </div>
   </div>
   <div class="hero-right">
@@ -121,8 +108,8 @@ body{background:#FAF7F2;color:#4B1528;}
   </div>
 </section>
 
-<div class="section-header">
-  <span class="section-tag">About</span>
+<div class="sec-hdr" id="about">
+  <span class="sec-tag">About</span>
 </div>
 
 <div class="about">
@@ -136,65 +123,35 @@ body{background:#FAF7F2;color:#4B1528;}
   </div>
 </div>
 
-<div class="section-header">
-  <span class="section-tag">Services</span>
+<div class="sec-hdr" id="expertise">
+  <span class="sec-tag">Areas of expertise</span>
 </div>
 
-<div class="services">
-  <div class="service">
-    <div class="service-accent" style="background:#E8732A;"></div>
-    <div class="service-num">01</div>
-    <div class="service-name">Content marketing strategy</div>
-    <div class="service-desc">Editorial planning, content programs, and execution frameworks built around real business goals. From strategy through to delivery.</div>
-    <div class="service-tags">
-      <span class="tag-orange">Blogs</span><span class="tag-orange">Newsletters</span><span class="tag-orange">Email sequences</span><span class="tag-orange">Landing pages</span><span class="tag-orange">Webinars</span>
-    </div>
+<div class="list">
+  <div class="list-item">
+    <span class="list-num">01</span>
+    <span class="list-name">Customer marketing + advocacy</span>
   </div>
-  <div class="service">
-    <div class="service-accent" style="background:#B8395A;"></div>
-    <div class="service-num">02</div>
-    <div class="service-name">Customer storytelling</div>
-    <div class="service-desc">Turning customer interviews into compelling narratives — case studies, testimonials, and advocacy content that resonates and converts.</div>
-    <div class="service-tags">
-      <span class="tag-berry">Case studies</span><span class="tag-berry">Testimonials</span><span class="tag-berry">Video scripts</span>
-    </div>
+  <div class="list-item">
+    <span class="list-num">02</span>
+    <span class="list-name">Customer storytelling</span>
   </div>
-  <div class="service">
-    <div class="service-accent" style="background:#B8395A;"></div>
-    <div class="service-num">03</div>
-    <div class="service-name">Customer advocacy & programs</div>
-    <div class="service-desc">Building reference programs, advocacy trackers, and customer community initiatives from scratch — strategy and hands-on execution.</div>
-    <div class="service-tags">
-      <span class="tag-berry">Reference programs</span><span class="tag-berry">Advocacy trackers</span><span class="tag-berry">Community</span>
-    </div>
+  <div class="list-item">
+    <span class="list-num">03</span>
+    <span class="list-name">Content marketing</span>
   </div>
-  <div class="service">
-    <div class="service-accent" style="background:#4B1528;"></div>
-    <div class="service-num">04</div>
-    <div class="service-name">Operations & systems</div>
-    <div class="service-desc">Workflow design, internal databases, and scalable processes that help marketing teams run better. Built to last, not just to launch.</div>
-    <div class="service-tags">
-      <span class="tag-plum">Asana</span><span class="tag-plum">Airtable</span><span class="tag-plum">Workflow design</span><span class="tag-plum">Databases</span>
-    </div>
+  <div class="list-item">
+    <span class="list-num">04</span>
+    <span class="list-name">Operations + systems</span>
+  </div>
+  <div class="list-item">
+    <span class="list-num">05</span>
+    <span class="list-name">Copywriting + editing</span>
   </div>
 </div>
 
-<div class="service-full">
-  <div class="service-full-accent" style="background:#C4A89A;"></div>
-  <div style="flex:1;">
-    <div class="service-full-header">
-      <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:300;color:#4B1528;">Freelance writing & editing</div>
-      <span class="service-full-badge">Also available</span>
-    </div>
-    <div style="font-family:'Satoshi',sans-serif;font-size:13px;color:#7A3045;line-height:1.75;max-width:580px;">Sharp, thoughtful writing and editing across formats — articles, essays, dissertations, brand content. Whether it needs a careful eye or a complete overhaul, I bring the same close-reading instincts developed as an English major and former librarian.</div>
-    <div class="service-tags" style="margin-top:14px;">
-      <span class="tag-neutral">Articles & essays</span><span class="tag-neutral">Dissertation editing</span><span class="tag-neutral">Brand content</span><span class="tag-neutral">Ghostwriting</span>
-    </div>
-  </div>
-</div>
-
-<div class="section-header">
-  <span class="section-tag">Past clients & collaborators</span>
+<div class="sec-hdr">
+  <span class="sec-tag">Past clients & collaborators</span>
 </div>
 
 <div class="clients-section">
@@ -203,8 +160,8 @@ body{background:#FAF7F2;color:#4B1528;}
   </div>
 </div>
 
-<div class="section-header">
-  <span class="section-tag">Let's work together</span>
+<div class="sec-hdr" id="contact">
+  <span class="sec-tag">Let's work together</span>
 </div>
 
 <div class="contact">
