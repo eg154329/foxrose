@@ -4,13 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Foxrose</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
-body{background:#FAF7F2;color:#4B1528;}
+body{background:#E8D8CC;color:#4B1528;}
+.site-wrap{max-width:1200px;margin:0 auto;background:#FAF7F2;box-shadow:0 0 0 1px #E8D8CC;}
 
 .nav{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid #E8D8CC;}
 .nav-brand{display:flex;align-items:center;gap:10px;}
@@ -40,10 +43,12 @@ body{background:#FAF7F2;color:#4B1528;}
 .pullquote-source{font-family:'Satoshi',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#C4A89A;}
 
 .list{padding:0 48px;border-bottom:1px solid #E8D8CC;}
-.list-item{display:flex;align-items:baseline;gap:24px;padding:28px 0;border-bottom:1px solid #E8D8CC;}
+.list-item{display:flex;align-items:flex-start;gap:24px;padding:28px 0;border-bottom:1px solid #E8D8CC;}
 .list-item:last-child{border-bottom:none;}
-.list-num{font-family:'Satoshi',sans-serif;font-size:12px;color:#C4A89A;letter-spacing:1px;width:24px;flex-shrink:0;}
-.list-name{font-family:'Fraunces',serif;font-size:32px;font-weight:300;color:#4B1528;line-height:1;}
+.list-num{font-family:'Satoshi',sans-serif;font-size:12px;color:#C4A89A;letter-spacing:1px;width:24px;flex-shrink:0;padding-top:6px;}
+.list-content{flex:1;}
+.list-name{font-family:'Fraunces',serif;font-size:32px;font-weight:300;color:#4B1528;line-height:1;margin-bottom:8px;}
+.list-sub{font-family:'Satoshi',sans-serif;font-size:13px;color:#7A3045;line-height:1.6;}
 
 .clients-section{padding:56px 48px;border-bottom:1px solid #E8D8CC;}
 .clients-text{font-family:'Satoshi',sans-serif;font-size:15px;color:#7A3045;line-height:2.4;}
@@ -64,16 +69,11 @@ body{background:#FAF7F2;color:#4B1528;}
 </style>
 </head>
 <body>
+<div class="site-wrap">
 
 <nav class="nav">
   <div class="nav-brand">
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-      <polygon points="14,2 24,10 14,14" fill="#E8732A"/>
-      <polygon points="24,10 24,22 14,14" fill="#B8395A"/>
-      <polygon points="14,14 24,22 14,26 4,22" fill="#4B1528"/>
-      <polygon points="4,10 14,14 4,22" fill="#B8395A" opacity="0.7"/>
-      <polygon points="14,2 4,10 14,14" fill="#E8732A" opacity="0.8"/>
-    </svg>
+    <img src="logo.png" alt="Foxrose logo" style="width:36px;height:36px;object-fit:contain;">
     <span class="nav-logo">Foxrose</span>
   </div>
   <div>
@@ -87,10 +87,10 @@ body{background:#FAF7F2;color:#4B1528;}
   <div class="hero-left">
     <div>
       <div class="hero-tag">Content strategy & customer marketing</div>
-      <h1 class="hero-headline">Storytelling, strategy, and [X] that makes your<br>brand <em>more human.</em></h1>
+      <h1 class="hero-headline">The stories your customers<br>tell are your <em>best marketing.</em></h1>
     </div>
     <div class="hero-bottom">
-      <p class="hero-sub">Foxrose is a marketing and writing studio that helps brands big and small find, shape, and share stories that build trust, drive advocacy, and make the complex feel human.</p>
+      <p class="hero-sub">Foxrose helps B2B brands find, shape, and share the stories that build trust, drive advocacy, and make the complex feel human.</p>
       <a class="hero-cta" href="#contact">Let's talk</a>
     </div>
   </div>
@@ -130,23 +130,38 @@ body{background:#FAF7F2;color:#4B1528;}
 <div class="list">
   <div class="list-item">
     <span class="list-num">01</span>
-    <span class="list-name">Customer marketing + advocacy</span>
+    <div class="list-content">
+      <div class="list-name">Customer marketing + advocacy</div>
+      <div class="list-sub">Review programs · Reference programs · Advocacy strategy · Customer community</div>
+    </div>
   </div>
   <div class="list-item">
     <span class="list-num">02</span>
-    <span class="list-name">Customer storytelling</span>
+    <div class="list-content">
+      <div class="list-name">Customer storytelling</div>
+      <div class="list-sub">Case studies · Brand spotlights · Video scripts · Testimonials</div>
+    </div>
   </div>
   <div class="list-item">
     <span class="list-num">03</span>
-    <span class="list-name">Content marketing</span>
+    <div class="list-content">
+      <div class="list-name">Content marketing</div>
+      <div class="list-sub">Longform & blog · Email · Editorial strategy · Newsletters</div>
+    </div>
   </div>
   <div class="list-item">
     <span class="list-num">04</span>
-    <span class="list-name">Operations + systems</span>
+    <div class="list-content">
+      <div class="list-name">Operations + systems</div>
+      <div class="list-sub">Workflow design · Process documentation · Project management · Asana & Airtable</div>
+    </div>
   </div>
   <div class="list-item">
     <span class="list-num">05</span>
-    <span class="list-name">Copywriting + editing</span>
+    <div class="list-content">
+      <div class="list-name">Copywriting + editing</div>
+      <div class="list-sub">Articles & essays · Dissertation editing · Brand content · Ghostwriting</div>
+    </div>
   </div>
 </div>
 
@@ -182,9 +197,13 @@ body{background:#FAF7F2;color:#4B1528;}
 </div>
 
 <footer class="footer">
-  <span class="footer-logo">Foxrose</span>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <img src="logo.png" alt="Foxrose logo" style="width:22px;height:22px;object-fit:contain;">
+    <span class="footer-logo">Foxrose</span>
+  </div>
   <span class="footer-copy">© 2025 Foxrose LLC · foxrose.co</span>
 </footer>
 
+</div>
 </body>
 </html>
