@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Foxrose</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#E8D8CC;color:#4B1528;}
+.site-wrap{max-width:1200px;margin:0 auto;background:#FAF7F2;box-shadow:0 0 0 1px #E8D8CC;}
+
+.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid #E8D8CC;}
+.nav-brand{display:flex;align-items:center;gap:10px;}
+.nav-logo{font-family:'Fraunces',serif;font-size:20px;font-weight:400;color:#4B1528;}
+.nav-link{font-family:'Satoshi',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#7A3045;text-decoration:none;margin-left:32px;}
+
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;min-height:560px;border-bottom:1px solid #E8D8CC;}
+.contact-left{padding:60px 48px;border-right:1px solid #E8D8CC;display:flex;flex-direction:column;justify-content:space-between;}
+.contact-tag{font-family:'Satoshi',sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#E8732A;margin-bottom:16px;}
+.contact-headline{font-family:'Fraunces',serif;font-size:40px;font-weight:300;color:#4B1528;line-height:1.15;margin-bottom:20px;}
+.contact-headline em{color:#B8395A;font-style:italic;}
+.contact-sub{font-family:'Satoshi',sans-serif;font-size:14px;color:#7A3045;line-height:1.75;}
+.contact-detail-label{font-family:'Satoshi',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#E8732A;margin-bottom:8px;}
+.contact-detail-val{font-family:'Fraunces',serif;font-size:18px;font-weight:300;font-style:italic;color:#4B1528;}
+
+.contact-right{padding:60px 48px;}
+
+.field{margin-bottom:20px;}
+.field label{display:block;font-family:'Satoshi',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#E8732A;margin-bottom:8px;}
+.field input,.field textarea{width:100%;padding:12px 14px;font-family:'Satoshi',sans-serif;font-size:14px;color:#4B1528;background:#fff;border:1px solid #E8D8CC;border-radius:2px;outline:none;transition:border-color 0.2s;}
+.field input:focus,.field textarea:focus{border-color:#B8395A;}
+.field input::placeholder,.field textarea::placeholder{color:#C4A89A;}
+.field textarea{min-height:140px;resize:vertical;line-height:1.6;}
+
+.submit-btn{display:inline-block;padding:12px 28px;font-family:'Satoshi',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;border:1.5px solid #E8732A;color:#E8732A;background:transparent;border-radius:3px;cursor:pointer;transition:background 0.2s,color 0.2s;}
+.submit-btn:hover{background:#E8732A;color:#FAF7F2;}
+
+.footer{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-top:1px solid #E8D8CC;}
+.footer-logo{font-family:'Fraunces',serif;font-size:15px;font-weight:300;color:#4B1528;}
+.footer-copy{font-family:'Satoshi',sans-serif;font-size:11px;color:#C4A89A;}
+</style>
+</head>
+<body>
+<div class="site-wrap">
+
+<nav class="nav">
+  <div class="nav-brand">
+    <img src="logo.png" alt="Foxrose logo" style="width:36px;height:36px;object-fit:contain;">
+    <span class="nav-logo">Foxrose Studio</span>
+  </div>
+  <div>
+    <a class="nav-link" href="index.html#about">About</a>
+    <a class="nav-link" href="cv.html">CV</a>
+    <a class="nav-link" href="contact.html" style="color:#B8395A;">Contact</a>
+  </div>
+</nav>
+
+<div class="contact-wrap">
+  <div class="contact-left">
+    <div>
+      <div class="contact-tag">Get in touch</div>
+      <h1 class="contact-headline">Let's find<br>the <em>thread.</em></h1>
+      <p class="contact-sub">Whether you need a strategic partner, a storyteller, or someone to build the systems your team has been putting off — I'd love to hear from you. Tell me a bit about what you're working on and I'll be in touch soon.</p>
+    </div>
+    <div>
+      <div class="contact-detail-label">Or email directly</div>
+      <div class="contact-detail-val">hello@foxrose.co</div>
+    </div>
+  </div>
+
+  <div class="contact-right">
+    <form action="https://formspree.io/f/xjgjqeqa" method="POST">
+      <input type="hidden" name="_next" value="https://foxrose.co/contact.html?success=true">
+      <input type="hidden" name="_subject" value="New message from foxrose.co">
+
+      <div class="field">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+      </div>
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+      </div>
+      <div class="field">
+        <label for="company">Company (optional)</label>
+        <input type="text" id="company" name="company" placeholder="Acme Inc.">
+      </div>
+      <div class="field">
+        <label for="message">What are you working on?</label>
+        <textarea id="message" name="message" placeholder="Tell me a bit about your project, timeline, or what you're looking for..." required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send it →</button>
+    </form>
+
+    <!-- Success message (shown after redirect) -->
+    <script>
+      if (window.location.search.includes('success=true')) {
+        document.querySelector('form').style.display = 'none';
+        const msg = document.createElement('div');
+        msg.style.cssText = 'padding:40px 0;';
+        msg.innerHTML = '<p style="font-family:\'Fraunces\',serif;font-size:26px;font-weight:300;color:#4B1528;line-height:1.4;margin-bottom:16px;">Message sent — <em style=\'color:#B8395A;font-style:italic;\'>thank you!</em></p><p style="font-family:\'Satoshi\',sans-serif;font-size:14px;color:#7A3045;line-height:1.7;">I\'ll be in touch soon. In the meantime, feel free to connect on <a href="https://linkedin.com" style="color:#E8732A;">LinkedIn</a>.</p>';
+        document.querySelector('.contact-right').appendChild(msg);
+      }
+    </script>
+  </div>
+</div>
+
+<footer class="footer">
+  <div style="display:flex;align-items:center;gap:8px;">
+    <img src="logo.png" alt="Foxrose logo" style="width:22px;height:22px;object-fit:contain;">
+    <span class="footer-logo">Foxrose</span>
+  </div>
+  <span class="footer-copy">© 2026 Foxrose LLC · foxrose.co</span>
+</footer>
+
+</div>
+</body>
+</html>
