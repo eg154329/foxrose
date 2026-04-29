@@ -22,7 +22,7 @@ body{background:#E8D8CC;color:#4B1528;}
 
 .contact-wrap{display:grid;grid-template-columns:1fr 1fr;min-height:560px;border-bottom:1px solid #E8D8CC;}
 .contact-left{padding:60px 48px;border-right:1px solid #E8D8CC;display:flex;flex-direction:column;justify-content:space-between;}
-.contact-tag{font-family:'Satoshi',sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#E8732A;margin-bottom:16px;}
+.contact-tag{font-family:'Satoshi',sans-serif;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#E8732A;margin-bottom:16px;}
 .contact-headline{font-family:'Fraunces',serif;font-size:40px;font-weight:300;color:#4B1528;line-height:1.15;margin-bottom:20px;}
 .contact-headline em{color:#B8395A;font-style:italic;}
 .contact-sub{font-family:'Satoshi',sans-serif;font-size:14px;color:#7A3045;line-height:1.75;}
@@ -38,7 +38,7 @@ body{background:#E8D8CC;color:#4B1528;}
 .field input::placeholder,.field textarea::placeholder{color:#C4A89A;}
 .field textarea{min-height:140px;resize:vertical;line-height:1.6;}
 
-.submit-btn{display:inline-block;padding:12px 28px;font-family:'Satoshi',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;border:1.5px solid #E8732A;color:#E8732A;background:transparent;border-radius:3px;cursor:pointer;transition:background 0.2s,color 0.2s;}
+.submit-btn{display:inline-block;padding:12px 28px;font-family:'Satoshi',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;border:1.5px solid #E8732A;color:#E8732A;background:transparent;border-radius:3px;cursor:pointer;transition:background 0.2s,color 0.2s;}
 .submit-btn:hover{background:#E8732A;color:#FAF7F2;}
 
 .footer{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-top:1px solid #E8D8CC;}
@@ -67,8 +67,8 @@ body{background:#E8D8CC;color:#4B1528;}
   <div class="contact-left">
     <div>
       <div class="contact-tag">Get in touch</div>
-      <h1 class="contact-headline">Let's find<br>the <em>thread.</em></h1>
-      <p class="contact-sub">Whether you need a strategic partner, a storyteller, or someone to build the systems your team has been putting off — I'd love to hear from you. Tell me a bit about what you're working on and I'll be in touch soon.</p>
+      <h1 class="contact-headline">Let's make something<br><em>good,</em> together.</h1>
+      <p class="contact-sub">Whether you need strategy, storytelling, or systems to power your marketing or editorial programs, I'd love to hear from you. Drop me a line and I'll be in touch shortly.</p>
     </div>
     <div>
       <div class="contact-detail-label">Or email directly</div>
@@ -83,21 +83,21 @@ body{background:#E8D8CC;color:#4B1528;}
 
       <div class="field">
         <label for="name">Your name</label>
-        <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+        <input type="text" id="name" name="name" placeholder="" required>
       </div>
       <div class="field">
         <label for="email">Email address</label>
-        <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+        <input type="email" id="email" name="email" placeholder="" required>
       </div>
       <div class="field">
         <label for="company">Company (optional)</label>
-        <input type="text" id="company" name="company" placeholder="Acme Inc.">
+        <input type="text" id="company" name="company" placeholder="">
       </div>
       <div class="field">
-        <label for="message">What are you working on?</label>
-        <textarea id="message" name="message" placeholder="Tell me a bit about your project, timeline, or what you're looking for..." required></textarea>
+        <label for="message">How can I help?</label>
+        <textarea id="message" name="message" placeholder="Tell me more about your project, business needs, or timeline..." required></textarea>
       </div>
-      <button type="submit" class="submit-btn">Send it →</button>
+      <button type="submit" class="submit-btn">Submit →</button>
     </form>
 
     <!-- Success message (shown after redirect) -->
