@@ -56,7 +56,7 @@ body{background:#E8D8CC;color:#4B1528;}
 .clients-text strong{color:#B8395A;font-weight:500;}
 
 .contact{display:grid;grid-template-columns:1fr 1fr;min-height:260px;}
-.contact-left{padding:60px 48px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid #E8D8CC;}
+.contact-left{padding:60px 48px;display:flex;flex-direction:column;justify-content:flex-start;border-right:1px solid #E8D8CC;}
 .contact-left h2{font-family:'Fraunces',serif;font-size:38px;font-weight:300;color:#4B1528;line-height:1.15;margin-bottom:16px;}
 .contact-left h2 em{color:#B8395A;font-style:italic;}
 .contact-left p{font-family:'Satoshi',sans-serif;font-size:14px;color:#7A3045;line-height:1.7;}
@@ -186,11 +186,11 @@ body{background:#E8D8CC;color:#4B1528;}
       <input type="hidden" name="_subject" value="New message from foxrose.co">
       <div class="field">
         <label>Your name</label>
-        <input type="text" name="name" placeholder="Jane Smith" required>
+        <input type="text" name="name" placeholder="" required>
       </div>
       <div class="field">
-        <label>Email address</label>
-        <input type="email" name="email" placeholder="jane@company.com" required>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="" required>
       </div>
       <div class="field">
         <label>What are you working on?</label>
