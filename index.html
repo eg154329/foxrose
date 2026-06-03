@@ -33,24 +33,69 @@ body{background:#E8D8CC;color:#4B1528;}
 .hero-cta:hover{background:#E8732A;color:#FAF7F2;}
 
 @media(max-width:768px){
-  .hero{flex-direction:column;min-height:auto;}
-  .hero-img{position:relative;width:100%;height:260px;object-fit:cover;object-position:center top;}
+  /* Hero — show image as a banner above text */
+  .hero{
+    flex-direction:column;
+    min-height:auto;
+    background-image:none;
+    align-items:stretch;
+  }
+  .hero::before{
+    content:'';
+    display:block;
+    width:100%;
+    height:260px;
+    background-image:url('hero-bg.jpg');
+    background-size:120%;
+    background-position:60% 20%;
+    background-repeat:no-repeat;
+    flex-shrink:0;
+  }
   .hero-overlay{display:none;}
-  .hero-left{padding:40px 24px;max-width:100%;}
-  .hero-headline{font-size:32px;}
-  .nav{padding:16px 24px;}
-  .nav-link{margin-left:16px;font-size:10px;}
+  .hero-left{
+    position:relative;
+    padding:36px 24px;
+    max-width:100%;
+    background:#FAF7F2;
+  }
+  .hero-headline{font-size:30px;}
+  .hero-sub{font-size:14px;max-width:100%;}
+
+  /* Nav */
+  .nav{padding:14px 20px;}
+  .nav-logo{font-size:17px;}
+  .nav-link{margin-left:14px;font-size:10px;}
+
+  /* About */
   .about{grid-template-columns:1fr;}
-  .about-left{padding:40px 24px;border-right:none;border-bottom:1px solid #E8D8CC;}
-  .about-right{padding:40px 24px;}
+  .about-left{padding:36px 24px;border-right:none;border-bottom:1px solid #E8D8CC;}
+  .about-right{padding:36px 24px;}
+  .about-bio{font-size:22px;}
+
+  /* Expertise list */
   .list{padding:0 24px;}
-  .clients-section{padding:40px 24px;}
-  .contact{grid-template-columns:1fr;}
-  .contact-left{padding:40px 24px;border-right:none;border-bottom:1px solid #E8D8CC;}
-  .contact-right{padding:40px 24px;}
-  .sec-hdr{padding:20px 24px;}
-  .footer{padding:16px 24px;}
   .list-name{font-size:24px;}
+  .list-sub{font-size:14px;}
+
+  /* Clients */
+  .clients-section{padding:36px 24px;}
+  .clients-text{font-size:14px;line-height:2;}
+
+  /* Contact */
+  .contact{grid-template-columns:1fr;}
+  .contact-left{padding:36px 24px;border-right:none;border-bottom:1px solid #E8D8CC;}
+  .contact-left h2{font-size:30px;}
+  .contact-right{padding:32px 24px;}
+
+  /* Section headers */
+  .sec-hdr{padding:18px 24px;}
+  .sec-tag{font-size:11px;}
+
+  /* Footer */
+  .footer{padding:16px 24px;}
+
+  /* Site wrap — remove side shadow on mobile */
+  .site-wrap{box-shadow:none;}
 }
 
 .sec-hdr{display:flex;align-items:center;padding:28px 48px;border-top:1px solid #E8D8CC;border-bottom:1px solid #E8D8CC;background:#FAF7F2;}
