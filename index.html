@@ -32,49 +32,6 @@ body{background:#E8D8CC;color:#4B1528;}
 .hero-cta{font-family:'Satoshi',sans-serif;display:inline-block;padding:10px 22px;border-radius:3px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;border:1.5px solid #E8732A;color:#E8732A;text-decoration:none;white-space:nowrap;align-self:flex-start;flex-shrink:0;transition:background 0.2s,color 0.2s;}
 .hero-cta:hover{background:#E8732A;color:#FAF7F2;}
 
-@media(max-width:768px){
-  /* Hero */
-  .hero{flex-direction:column;min-height:auto;background-image:none;align-items:stretch;}
-  .hero::before{content:'';display:block;width:100%;height:240px;background-image:url('hero-bg.jpg');background-size:130%;background-position:60% 20%;background-repeat:no-repeat;flex-shrink:0;}
-  .hero-overlay{display:none;}
-  .hero-left{position:relative;padding:36px 24px;max-width:100%;background:#FAF7F2;}
-  .hero-headline{font-size:30px;}
-  .hero-sub{font-size:14px;max-width:100%;}
-
-  /* Nav */
-  .nav{padding:14px 20px;}
-  .nav-logo{font-size:17px;}
-  .nav-link{margin-left:14px;font-size:10px;}
-
-  /* About — stack vertically */
-  .about{display:flex;flex-direction:column;}
-  .about-left{padding:36px 24px;border-right:none;border-bottom:1px solid #E8D8CC;width:100%;}
-  .about-right{padding:36px 24px;width:100%;}
-  .about-bio{font-size:22px;}
-  .pullquote{font-size:18px;}
-
-  /* Expertise list */
-  .list{padding:0 24px;}
-  .list-name{font-size:24px;}
-  .list-sub{font-size:14px;}
-
-  /* Clients */
-  .clients-section{padding:36px 24px;}
-  .clients-text{font-size:14px;line-height:2;}
-
-  /* Contact — stack vertically */
-  .contact{display:flex;flex-direction:column;}
-  .contact-left{padding:36px 24px;border-right:none;border-bottom:1px solid #E8D8CC;width:100%;}
-  .contact-left h2{font-size:30px;}
-  .contact-right{padding:32px 24px;width:100%;}
-
-  /* Section headers + footer */
-  .sec-hdr{padding:18px 24px;}
-  .sec-tag{font-size:11px;}
-  .footer{padding:16px 24px;}
-  .site-wrap{box-shadow:none;}
-}
-
 .sec-hdr{display:flex;align-items:center;padding:28px 48px;border-top:1px solid #E8D8CC;border-bottom:1px solid #E8D8CC;background:#FAF7F2;}
 .sec-tag{font-family:'Satoshi',sans-serif;font-size:14px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#E8732A;}
 
@@ -116,6 +73,49 @@ body{background:#E8D8CC;color:#4B1528;}
 .footer{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-top:1px solid #E8D8CC;}
 .footer-logo{font-family:'Fraunces',serif;font-size:15px;font-weight:300;color:#4B1528;}
 .footer-copy{font-family:'Satoshi',sans-serif;font-size:11px;color:#C4A89A;}
+
+@media(max-width:768px){
+  /* Hero */
+  .hero{flex-direction:column;min-height:auto;background-image:none;align-items:stretch;}
+  .hero::before{content:'';display:block;width:100%;height:240px;background-image:url('hero-bg.jpg');background-size:130%;background-position:60% 20%;background-repeat:no-repeat;flex-shrink:0;}
+  .hero-overlay{display:none;}
+  .hero-left{position:relative;padding:36px 24px;max-width:100%;background:#FAF7F2;}
+  .hero-headline{font-size:30px;}
+  .hero-sub{font-size:14px;max-width:100%;}
+
+  /* Nav */
+  .nav{padding:14px 20px;}
+  .nav-logo{font-size:17px;}
+  .nav-link{margin-left:14px;font-size:10px;}
+
+  /* About — stack vertically */
+  .about{display:flex !important;flex-direction:column !important;}
+  .about-left{padding:36px 24px;border-right:none;border-bottom:1px solid #E8D8CC;width:100%;}
+  .about-right{padding:36px 24px;width:100%;}
+  .about-bio{font-size:22px;}
+  .pullquote{font-size:18px;}
+
+  /* Expertise list */
+  .list{padding:0 24px;}
+  .list-name{font-size:24px;}
+  .list-sub{font-size:14px;}
+
+  /* Clients */
+  .clients-section{padding:36px 24px;}
+  .clients-text{font-size:14px;line-height:2;}
+
+  /* Contact — stack vertically */
+  .contact{display:flex !important;flex-direction:column !important;}
+  .contact-left{padding:36px 24px;border-right:none;border-bottom:1px solid #E8D8CC;width:100%;}
+  .contact-left h2{font-size:30px;}
+  .contact-right{padding:32px 24px;width:100%;}
+
+  /* Section headers + footer */
+  .sec-hdr{padding:18px 24px;}
+  .sec-tag{font-size:11px;}
+  .footer{padding:16px 24px;}
+  .site-wrap{box-shadow:none;}
+}
 </style>
 </head>
 <body>
