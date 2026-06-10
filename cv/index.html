@@ -51,6 +51,49 @@ body{background:#E8D8CC;color:#4B1528;}
 .footer{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-top:1px solid #E8D8CC;}
 .footer-logo{font-family:'Fraunces',serif;font-size:15px;font-weight:300;color:#4B1528;}
 .footer-copy{font-family:'Satoshi',sans-serif;font-size:11px;color:#C4A89A;}
+
+@media(max-width:768px){
+  .site-wrap{box-shadow:none;}
+
+  /* Nav */
+  .nav{padding:14px 20px;}
+  .nav-logo{font-size:17px;}
+  .nav-link{margin-left:14px;font-size:10px;}
+  .sec-hdr{padding:18px 20px;}
+
+  /* CV entries — stack job then stats */
+  .a-entry{display:flex !important;flex-direction:column !important;}
+  .a-left{padding:28px 20px;border-right:none;border-bottom:1px solid #E8D8CC;}
+  .a-role{font-size:20px;}
+  .a-bullet{font-size:13px;}
+
+  /* Stats row — side by side below the bullets */
+  .a-right{
+    display:flex !important;
+    flex-direction:row !important;
+    justify-content:space-around;
+    padding:0;
+    gap:0;
+    border-bottom:1px solid #E8D8CC;
+  }
+  .a-stat{
+    flex:1;
+    padding:20px 10px;
+    text-align:center;
+    border-right:1px solid #E8D8CC;
+  }
+  .a-stat:last-child{border-right:none;}
+  .a-stat-num{font-size:26px;}
+  .a-stat-divider{display:none;}
+
+  /* Bottom section — stack vertically */
+  .ending{display:flex !important;flex-direction:column !important;}
+  .ending-col{padding:28px 20px;border-right:none;border-bottom:1px solid #E8D8CC;width:100%;}
+  .ending-col:last-child{border-bottom:none;}
+
+  /* Footer */
+  .footer{padding:16px 20px;}
+}
 </style>
 </head>
 <body>
